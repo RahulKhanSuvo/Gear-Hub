@@ -51,6 +51,51 @@ ul {
     display: none;
 }
 
+/* banner section start here */
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 600px;
+    border: 1px solid rebeccapurple;
+
+}
+
+.banner-title h1 {
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+
+.banner-title p {
+    color: rgb(58, 58, 58);
+    font-weight: 600;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.banner-title button {
+    color: white;
+    font-weight: 700;
+    padding: 10px 24px;
+    border-radius: 41px;
+    border: none;
+    background: rgb(224, 44, 109);
+}
+
+.banner-photo {
+    background-image: url(../images/Circle-design.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.banner-photo img {
+    width: 100%;
+    height: 100%;
+}
+
 /* style for responsive */
 @media screen and (max-width:576px) {
     * {
@@ -68,5 +113,14 @@ ul {
 
     .nav-option {
         display: none;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-title h1 {
+        font-size: 28px;
+        text-align: center;
     }
 }
