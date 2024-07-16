@@ -57,8 +57,7 @@ ul {
     align-items: center;
     justify-content: space-around;
     height: 600px;
-    border: 1px solid rebeccapurple;
-
+    margin-bottom: 20px;
 }
 
 .banner-title h1 {
@@ -96,6 +95,18 @@ ul {
     height: 100%;
 }
 
+/* logos section */
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 35px 0px;
+    border-top: 1px solid;
+    border-color: rgb(197, 197, 197);
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
 /* style for responsive */
 @media screen and (max-width:576px) {
     * {
@@ -117,10 +128,21 @@ ul {
 
     .banner-container {
         flex-direction: column-reverse;
+        text-align: center;
     }
 
     .banner-title h1 {
         font-size: 28px;
-        text-align: center;
+    }
+
+    .logos {
+
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+
+    .logos img {
+        width: 40px;
+        height: auto;
     }
 }
